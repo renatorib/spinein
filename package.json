@@ -1,0 +1,35 @@
+{
+  "name": "spinein",
+  "version": "0.0.1",
+  "description": "Spine like a shell spinner",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "npm run build -- -w",
+    "buildp": "npm run build -- -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renatorib/spine.git"
+  },
+  "keywords": [
+    "spine",
+    "spinner",
+    "shell",
+    "spinner",
+    "dom",
+    "spinner"
+  ],
+  "author": "Renato Ribeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/renatorib/spine/issues"
+  },
+  "homepage": "https://github.com/renatorib/spine#readme",
+  "devDependencies": {
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-1": "^6.13.0",
+    "webpack": "^1.13.1"
+  }
+}
