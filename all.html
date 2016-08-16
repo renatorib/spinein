@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Spine Example</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <div class="spinners"></div>
+  <script src="../build/spine.js"></script>
+  <script>
+    var onReady = function(){
+      var spinners = spine.spinners;
+      var $spinners = document.querySelector('.spinners');
+      for (var spin in spinners) {
+        var $wrapper = document.createElement('div');
+        $wrapper.className = 'spinner ' + spin;
+        $wrapper.title = spin;
+        $spinners.appendChild($wrapper);
+
+        spine(spinners[spin]).in($wrapper);
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', onReady);
+  </script>
+</body>
+</html>

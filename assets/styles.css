@@ -1,0 +1,51 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Mono';
+
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'PT Mono';
+  text-align: center;
+  color: #444444;
+  letter-spacing: 3px;
+  paddig: 50px;
+}
+
+.spinners {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.spinner {
+  width: 33.33%;
+  height: 100px;
+  padding-top: 30px;
+  text-align: center;
+  font-size: 35px;
+  white-space: pre;
+  font-family: 'PT Mono', monospace;
+  background-color: #f8f8f8;
+  border: 3px solid white;
+  transition: all 0.3s ease;
+  color: #777aaa;
+}
+
+@media (max-width: 768px) {
+  .spinner {
+    width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .spinner {
+    width: 100%;
+  }
+}
+
+.spinners > *:hover {
+  background-color: #f2f2f2;
+}
