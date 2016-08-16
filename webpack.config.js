@@ -1,7 +1,7 @@
 module.exports = {
   entry: './src/index.js',
   output: {
-    filename: './build/spine.js',
+    filename: './dist/spine.js',
     library: 'spine',
     libraryTarget: 'umd'
   },

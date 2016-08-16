@@ -4,9 +4,8 @@
   "description": "Spine like a shell spinner",
   "main": "index.js",
   "scripts": {
-    "build": "webpack",
-    "watch": "npm run build -- -w",
-    "buildp": "npm run build -- -p"
+    "watch": "webpack -w -p",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",
