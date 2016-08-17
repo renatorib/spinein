@@ -4,8 +4,9 @@
   "description": "Spine like a shell spinner",
   "main": "spine.js",
   "scripts": {
-    "watch": "webpack -w -p",
-    "build": "webpack -p",
+    "clear": "rm -rf dist",
+    "watch": "npm run clear && webpack -w -p",
+    "build": "npm run clear && webpack -p",
     "publish": "npm run build && npm publish dist"
   },
   "repository": {

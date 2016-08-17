@@ -4,6 +4,14 @@ Spine like a shell spinner \ | / -
 ## Why
 Fun.
 
+## Install
+```sh
+npm i spinein
+```
+```html
+<script src="node_modules/spinein/spine.js"></script>
+```
+
 ## Usage
 
 ### With presets frames
