@@ -5,7 +5,8 @@
   "main": "spine.js",
   "scripts": {
     "watch": "webpack -w -p",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "publish": "npm run build && npm publish dist"
   },
   "repository": {
     "type": "git",
