@@ -1,6 +1,6 @@
 {
   "name": "spinein",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Spine like a shell spinner",
   "main": "spine.js",
   "scripts": {
