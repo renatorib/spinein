@@ -31,6 +31,17 @@ spinner.in('.first-div');
 spinner.in('.second-div');
 ```
 
+### Stop spinning
+```js
+var spinner = spine('dots').in('.spinner-div');
+
+setTimeout(function(){
+  clearInterval(spinner);
+}, 5000);
+
+// will stop spinning after 5 seconds
+```
+
 ### Real Example
 ```html
 [...]
