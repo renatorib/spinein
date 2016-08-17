@@ -1,7 +1,10 @@
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/spine.js',
   output: {
-    filename: './dist/spine.js',
+    path: './dist',
+    filename: 'spine.js',
     library: 'spine',
     libraryTarget: 'umd'
   },
@@ -9,5 +12,12 @@ module.exports = {
     loaders: [{
       loader: 'babel', test: /\.js$/, exclude: /(node_modules)/
     }]
-  }
+  },
+  plugins: [
+    new CopyWebpackPlugin([
+      { from: './package.json' },
+      { from: './LICENSE' },
+      { from: './README.md' }
+    ])
+  ]
 }
