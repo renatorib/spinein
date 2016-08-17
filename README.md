@@ -26,7 +26,7 @@ spine({
 
 ### Share spinner
 ```js
-var spin = spine('dots');
+var spinner = spine('dots');
 spinner.in('.first-div');
 spinner.in('.second-div');
 ```
